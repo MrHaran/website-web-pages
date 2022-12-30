@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <script src="https://kit.fontawesome.com/82f797382f.js" crossorigin="anonymous"></script>
+    <link href="css/message.css" rel="stylesheet">
+</head>
+
+<body>
+  
+  <nav class="navbar">
+    <div class="logo_header">
+      <h2 style="color: #03a4ed;">CODE<span style="color: #fe3f40;">LOOP</span></h2>
+      <button class="navbar_toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    
+    <ul class="main_nav">
+      <li>
+        <a href="page.html" class="nav_links">Home</a>
+      </li>
+      <li>
+        <a href="about.html" class="nav_links">About us</a>
+      </li>
+      <li>
+        <a href="portfolio.html" class="nav_links">Protfolio</a>
+      </li>
+      <li>
+        <a href="blog.html" class="nav_links">Blog</a>
+      </li>
+      <li>
+        <a href="service.html" class="nav_links">Services</a>
+      </li>
+      <li>
+        <a href="message.html" class="active">Message Us</a>
+      </li>
+      <li>
+        <a href="contact.html" class="nav_links"><button>Contact</button></a>
+      </li>
+    </ul>
+      
+  </nav>
+
+
+  <!--Banner-->
+
+  <div class="banner_row">
+    <div class="banner-col">
+        <h3>Feel Free To send us a message about your Website needs
+ </h3>
+        <p style="font-family: Georgia, 'Times New Roman', Times, serif;">Space Dynamic is a professional looking HTML template using a Bootstrap 5(beta 2)
+          This css template is free for you provided by</p>
+          <h4 style="font-family: Georgia, 'Times New Roman', Times, serif;">For any enquiry,call Us:  <i class="fa fa-phone" aria-hidden="true"> </i> <small style="font-family: 'Times New Roman', Times, serif;">1122-5577-0989</small></h4>
+    </div>
+    <div class="banner-col1">
+      <form>
+<table>
+ <tr> <td> <input type="text"
+  pattern="[a-z]*"
+  placeholder="Name" class="form-inline"></td>
+ <td class="form-inline1"><input type="text" 
+  pattern="[a-z]*"
+  placeholder="Surname" ></td> </tr></table>
+<input type="email" placeholder=" Your Email">
+<textarea name="subject" placeholder="Message.."></textarea>
+    <input type="submit" value="Send Message">
+       
+  </form>
+    </div>
+  </div>
+    <footer>
+<h4 class="hru">&copy;VelMuruHa</h4>
+
+    </footer>
+</body>
+<script>
+  const navToggle = document.querySelector(".navbar_toggle");
+const links = document.querySelector(".main_nav");
+
+navToggle.addEventListener('click', function(){
+    links.classList.toggle("show_nav");
+})
+window.onscroll=function(){
+if (window.pageYOffset>=stickyPoint){
+  navbar.classList.add("sticky");
+}
+else{
+navbar.classList.remove("sticky");
+}
+};
+</script>
+</html>

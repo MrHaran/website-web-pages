@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color:azure;
+    font-size: 20px;
+    overflow: hidden !important;
+    position: sticky!important; 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+      top: 0;
+      z-index: 1;
+      transition: all 0.5s ease-in-out;
+  }
+  
+  .logo{
+    margin-left: 4%;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: crimson;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .logo_header{
+    display: flex;
+    margin-left: 4%;
+  }
+  
+  .main_nav{
+    display: flex;
+    width: 55%;
+    float: right;
+    margin-right: 4%;
+    justify-content: space-between;
+    list-style: none;
+    
+  }
+  .main_nav li a:hover{
+    color:red;
+  }
+  
+  .main_nav li{
+    display: inline;
+    color: #ffffff;
+  }
+  .main_nav li a{
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .navbar_toggle {
+    display:none;
+  }
+  .banner-col h3{
+    font-weight: 700;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 70px;
+  }
+  .banner_row{
+    width: 100% !important;
+    display: flex !important;
+    align-items: center ;
+  justify-content: center  !important;
+  flex-direction: row;
+  overflow: hidden;
+    
+  }
+ .main_nav button{
+    border: none;
+    background-color: red;
+    color: antiquewhite;
+    font-weight: 800;
+    border-radius: 20px;
+    padding: 5%;
+    padding-left: 25px;
+    padding-right: 25px;
+    overflow: hidden;
+  }
+  button:hover{
+  
+    background-color: burlywood;
+      }
+  .banner-col{
+
+    flex-basis: 50%;
+  }
+  .banner-col h3{
+    position: relative;
+    left: 15% !important;
+    
+  }
+  .banner-col button {
+    background-color: blue;
+    color: white!important;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    margin-top: 5%;
+    margin-left: 18%;
+    margin-bottom: 5%;
+    overflow: hidden;
+  }
+  .banner-col1{
+    width: 50% !important;
+    display: flex !important;
+    float: right;
+    align-items: center ;
+  justify-content: center  !important;
+  flex-direction: row;
+  overflow: hidden;
+ 
+  }
+  .text i{
+    color: red;
+  }
+  .text span{
+    color: rgb(204, 171, 171);
+  }
+  .text i,span{
+    padding-bottom: 10px;
+  }
+  .text h3{
+padding-bottom: 10px;
+font-weight:900;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .text p{
+    padding-bottom: 30px;
+  }
+  .image1 img{
+    border-radius: 15px;
+ margin-bottom: 3%;
+ margin-left: 25px;
+ overflow: hidden;
+  }
+  .col{
+  
+    flex-basis: 25%;
+    overflow: hidden;
+  }
+  .col1{
+  
+    flex-basis: 25%;
+  }
+  .active{
+    color: gold!important;
+  }
+  .banner-col img{
+    position: relative;
+    left: 15% !important;
+    padding-top: 10px;
+    border-radius: 30px;
+    box-shadow: 3px 4px 4px rgba(187, 187, 190, 0.726);
+    z-index: -1;
+overflow: hidden;
+  }
+  .nan {
+    background-color: white;
+    margin-top: -4%;
+    position: relative;
+    left: 15% !important;
+    border-radius: 30px;
+    box-shadow: 3px 4px 4px rgba(187, 187, 190, 0.726);
+    margin-right: 15%;
+   overflow: hidden;
+   padding-bottom: 20px;
+  }
+  .nan i{
+    color: red;
+  }
+  .nan span{
+    color: rgba(194, 183, 183, 0.897);
+  }
+  
+    
+  
+  .nan h3{
+    margin-top: -8%;
+    margin-left: -10%;
+    overflow: hidden;
+  }
+  .nee{
+    padding-left: 70px;
+    padding-top: 10px;
+    overflow: hidden;
+  }
+  .nan p{
+    position: relative;
+    left: 6% !important;
+
+    margin-right: 15%;
+    padding-top: 5px;
+    overflow: hidden;
+  }
+  .sticky{
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  footer{
+  
+    
+    justify-content: center;
+   
+   
+    text-align: center;
+    overflow: hidden !important;
+  }
+  .hru{
+    overflow: hidden !important;
+       color:gold;
+  }
+  @media(max-width:600px){
+    .banner_row{
+      flex-direction: column !important;
+      overflow: hidden !important;
+    }
+    .banner-col h3{
+      padding: 20px;
+      position: relative;
+      left:2% !important;
+    }
+    .banner-col1 img{
+      overflow: hidden !important;
+      width:90% !important;
+    }
+  }
+  
+  @media only screen and (max-width : 992px){
+  
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color:aquamarine;
+    font-size: 20px;
+    position:sticky;
+      top: 0;
+      z-index: 1;
+      transition: all 0.5s ease-in-out;
+    
+  }
+  
+  .main_nav{
+    display: none;
+  }
+  
+  .show_nav{
+   padding-top: 2%;
+    display: flex;
+   width: 100vw;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .main_nav li{
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+    padding: 0%;
+  }
+  .navbar_toggle {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 30px;
+    color: #ffffff;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    display: block;
+  }
+  .logo_header{
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 2%;
+  }
+ 
+  
+    
+    .sticky{
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    .banner-col1{
+      width: 50% !important;
+      display: flex !important;
+ 
+
+    flex-direction:column-reverse;
+    overflow: hidden;
+   
+    }
+    .banner-col img{
+      position: relative;
+      left: 2% !important;
+      padding-top: 10px;
+      border-radius: 30px;
+   width: 96%;
+   height: 96%;
+      z-index: -1;
+  overflow: hidden;
+    }
+    .nan {
+   
+      margin-top: -4%;
+      position: relative;
+      left: 6% !important;
+      border-radius: 30px;
+   
+      margin-right: 15%;
+     overflow: hidden;
+     padding-bottom: 40px;
+    }
+    .banner-col h3{
+      position: relative;
+      left: 11% !important;
+      
+    }
+    .nee{
+      
+      margin-right: 40%;
+      margin-bottom: 3%;
+    }
+ .nee i,span{
+  margin-right: 2%;
+ }
+ .banner-col button {
+margin-left: 8%;
+
+
+  overflow: hidden;
+}
+footer{
+  
+    
+  justify-content: center;
+ 
+ 
+  text-align: center;
+  overflow: hidden !important;
+}
+.nav_links button{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+footer{
+    
+  justify-content: center;
+  margin-left: -15px;
+ margin-bottom: -10%;
+ margin-top: 30%;
+  text-align: center;
+  overflow: hidden;
+}
+  }

@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+  
+    background-image: linear-gradient(rgba(255, 2, 2, 0.979),rgb(248, 9, 9));
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  background-position:bottom;
+  height: 100%;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color:azure;
+    font-size: 20px;
+    overflow: hidden !important;
+    position: sticky!important; 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+      top: 0;
+      z-index: 1;
+      transition: all 0.5s ease-in-out;
+  }
+  
+  .logo{
+    margin-left: 4%;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: crimson;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .logo_header{
+    display: flex;
+    margin-left: 4%;
+  }
+  
+  .main_nav{
+    display: flex;
+    width: 55%;
+    float: right;
+    margin-right: 4%;
+    justify-content: space-between;
+    list-style: none;
+    
+  }
+  .main_nav li a:hover{
+    color:red;
+  }
+  
+  .main_nav li{
+    display: inline;
+    color: #ffffff;
+  }
+  .main_nav li a{
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .navbar_toggle {
+    display:none;
+  }
+  .banner_row{
+    width: 100% !important;
+    display: flex !important;
+    align-items: center ;
+  justify-content: center  !important;
+  flex-direction: row;
+  overflow: hidden;
+    
+  }
+  button{
+    border: none;
+    background-color: red;
+    color: antiquewhite;
+    font-weight: 800;
+    border-radius: 20px;
+    padding: 5%;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  button:hover{
+  
+    background-color: burlywood;
+      }
+  .banner-col{
+    flex-basis: 50%;
+    margin-top: 3%;
+  }
+  .banner-col h3,p,h4{
+   
+    position: relative;
+    left: 20% !important;
+    color: white;
+    padding-right: 25%;
+    padding-bottom: 30px;
+    line-height: 30px;
+    
+    
+  }
+  .banner-col h3{
+    font-size: x-large;
+    text-transform: capitalize;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  
+  }
+  .banner-col i{
+    color: #f80606f8;
+    background-color: white;
+  padding: 1%;
+  border-radius: 13px;
+  }
+  .banner-col1{
+    flex-basis: 50%;
+  }
+
+  .active{
+    color: gold!important;
+  }
+  .sticky{
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  textarea{
+    height: 140px;
+    width:100%;
+  }
+  input[type=text],input[type=text]{
+    width: 110%;
+    padding: 10px;
+ 
+   border: none;
+    border-radius: 12px;
+    margin: 3%;
+    
+    background-color: rgba(162, 210, 250, 0.685);
+  }
+  .form-inline1{
+   padding-left: 65px;
+  }
+    input[type=email] ,textarea{
+    width: 100%;
+    padding: 11px;
+   border: none;
+    border-radius: 12px;
+    margin: 2%;
+    background-color: rgba(162, 210, 250, 0.699);
+  }
+  input[type=submit]{
+    background-color: rgb(106, 106, 241);
+    border: none;
+    padding: 10px;
+    color: white;
+    margin: 2%;
+    border-radius: 15px;
+  }
+  form{
+    margin-top: 4%;
+    background-color: white;
+    overflow: hidden;
+    margin-right: 18%;
+    padding: 7%;
+   border-radius: 20px;
+  }
+  input:invalid{
+animation: shake.3s;
+  }
+  @keyframes shake{
+    25%{transform: translateX(4px);}
+    50%{transform: translateX(-4px);}
+    75%{transform: translateX(4px);}
+  }
+  footer{
+    margin-top: 2%;
+  
+    padding-bottom: -5px;
+    justify-content: center;
+    margin-left: -295px;
+   padding-top: 10px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .hru{
+    color:rgb(230, 255, 6);
+    font-size: smaller;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+  @media(max-width:600px){
+    .banner_row{
+      flex-direction: column !important;
+      overflow: hidden !important;
+    }
+    .banner-col h3{
+      padding: 20px;
+      position: relative;
+      left:2% !important;
+    }
+ 
+  }
+  
+  @media only screen and (max-width : 992px){
+  
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color:aquamarine;
+    font-size: 20px;
+    position:sticky;
+      top: 0;
+      z-index: 1;
+      transition: all 0.5s ease-in-out;
+    
+  }
+  
+  .main_nav{
+    display: none;
+  }
+  
+  .show_nav{
+   padding-top: 2%;
+    display: flex;
+   width: 100vw;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .main_nav li{
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+    padding: 0%;
+  }
+  .navbar_toggle {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 30px;
+    color: #ffffff;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    display: block;
+  }
+  .logo_header{
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 2%;
+  }
+    .banner-col h3,p{
+      position: relative;
+      left: 11% !important;
+      padding-right: 15%;
+      
+    }
+    .sticky{
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    form{
+      margin-right: 10%;
+      margin-left: 10%;
+      margin-bottom: 20px;
+    }
+    input[type=text],input[type=text]{
+      width: 140%;
+     
+    }
+    input[placeholder=Surname]{
+      margin-left:-30%;
+    }
+    .banner-col h4{
+margin-left: -10%;
+    }
+    .nav_links button{
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    footer{
+    
+      justify-content: center;
+      margin-left: -75px;
+    
+     margin-top: 30%;
+      text-align: center;
+      overflow: hidden;
+    }
+  } 

@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color:azure;
+    font-size: 20px;
+    overflow: hidden !important;
+    position: sticky!important; 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+      top: 0;
+      z-index: 1;
+      transition: all 0.5s ease-in-out;
+  }
+  
+  .logo{
+    margin-left: 4%;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: crimson;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .logo_header{
+    display: flex;
+    margin-left: 4%;
+  }
+  
+  .main_nav{
+    display: flex;
+    width: 55%;
+    float: right;
+    margin-right: 4%;
+    justify-content: space-between;
+    list-style: none;
+    
+  }
+  .main_nav li a:hover{
+    color:red;
+  }
+  
+  .main_nav li{
+    display: inline;
+    color: #ffffff;
+  }
+  .main_nav li a{
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .navbar_toggle {
+    display:none;
+  }
+  strong{
+  font-size: xx-large;
+  }
+  .banner_row{
+    width: 100% !important;
+    display: block !important;
+    align-items: center ;
+  justify-content: center  !important;
+  flex-direction: row;
+  overflow: hidden;
+    
+  }
+  button{
+    border: none;
+    background-color: red;
+    color: antiquewhite;
+    font-weight: 800;
+    border-radius: 20px;
+    padding: 5%;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  button:hover{
+  
+    background-color: burlywood;
+      }
+.banner-col h3{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+margin-left: 35%;
+    margin-right: 45%;
+    padding-left: 40px;
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+.banner-col1{
+    display: flex;
+    justify-content: center;
+}
+.image{
+    box-shadow: 1px 1px 1px 2px #88888841;
+  
+    border-radius: 15px;
+    margin: 1%;
+}
+  .active{
+    color: gold!important;
+  }
+  .sticky{
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  footer{
+    margin-top: 1%;
+    margin-bottom: -5px;
+    padding-bottom: -5px;
+    justify-content: center;
+    margin-left: -5px;
+   
+    text-align: center;
+    overflow: hidden;
+  }
+  .hru{
+       color:gold;
+  }
+  @media(max-width:600px){
+    .banner_row{
+      flex-direction: column !important;
+      overflow: hidden !important;
+    }
+    .banner-col h3{
+      padding: 20px;
+      position: relative;
+      left:2% !important;
+    }
+    .banner-col1 img{
+      overflow: hidden !important;
+      width:90% !important;
+    }
+  }
+  
+  @media only screen and (max-width : 992px){
+  
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color:aquamarine;
+    font-size: 20px;
+    position:sticky;
+      top: 0;
+      z-index: 1;
+      transition: all 0.5s ease-in-out;
+    
+  }
+  
+  .main_nav{
+    display: none;
+  }
+  
+  .show_nav{
+   padding-top: 2%;
+    display: flex;
+   width: 100vw;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .main_nav li{
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+    padding: 0%;
+  }
+  .navbar_toggle {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 30px;
+    color: #ffffff;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    display: block;
+  }
+  .logo_header{
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 2%;
+  }
+    .banner-col h3,p{
+      position: relative;
+      left: 11% !important;
+      padding-right: 15%;
+      
+    
+    }
+    .sticky{
+      position: fixed;
+      top: 0;
+      width: 100%;
+    
+    }
+  
+    button{
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .banner-col1{
+      display:block;
+      justify-content: center;
+  }
+  .banner-col h3{
+font-size: x-large;
+    margin-left: 10%;
+    margin-right: 20%;
+    padding-left: 20px;
+  }
+  .image{
+    width: 240px;
+    height: 240px;
+    margin: 5%;
+    margin-left: 18%;
+    box-shadow: 2px 2px 2px 3px #88888841;
+}
+footer{
+    
+  justify-content: center;
+  margin-left: -5px;
+
+ margin-top: 30%;
+  text-align: center;
+  overflow: hidden;
+}
+  } 
+  

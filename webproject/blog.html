@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <script src="https://kit.fontawesome.com/82f797382f.js" crossorigin="anonymous"></script>
+    <link href="css/blog.css" rel="stylesheet">
+</head>
+
+<body>
+  
+  <nav class="navbar">
+    <div class="logo_header">
+      <h2 style="color: #03a4ed;">CODE<span style="color: #fe3f40;">LOOP</span></h2>
+      <button class="navbar_toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    
+    <ul class="main_nav">
+      <li>
+        <a href="page.html" class="nav_links">Home</a>
+      </li>
+      <li>
+        <a href="about.html" class="nav_links">About us</a>
+      </li>
+      <li>
+        <a href="portfolio.html" class="nav_links">Protfolio</a>
+      </li>
+      <li>
+        <a href="blog.html" class="active">Blog</a>
+      </li>
+      <li>
+        <a href="service.html" class="nav_links">Services</a>
+      </li>
+      <li>
+        <a href="message.html" class="nav_links">Message Us</a>
+      </li>
+      <li>
+        <a href="contact.html" class="nav_links"><button>Contact</button></a>
+      </li>
+    </ul>
+      
+  </nav>
+
+
+  <!--Banner-->
+
+  <div class="banner_row">
+    <div class="banner-col">
+        <h3>
+          Check Out What Is <br>
+<span style="color: rgb(128, 169, 245);"> Trending </span>In Our Latest<span style="color: rgb(253, 4, 54);"><br>News</span></h3>
+    <img src="window.jpg" width="100%" height="100%">
+    <div class="nan">
+    <div class="nee">  <i class="fa fa-calendar" aria-hidden="true"></i><span> 24 March 2022</span>  <i class="fa fa-users" aria-hidden="true"></i> <span> Templatemo</span> <i class="fa fa-file" aria-hidden="true"></i> <span> Branding</span></div>
+        <h3>SEO Agency & Digital Marketing</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, neque. Molestiae ab iste sed aperiam ut accusantium ex corrupti voluptate excepturi dignissimos enim, voluptas dicta hic blanditiis, repellat reiciendis. Suscipit.</p>
+    </div>
+    <a href="https://youtu.be/DATM41KTbVc"><button>Discover More</button></a>
+</div>
+    <div class="banner-col1">
+      <div class="col">
+        <div class="text"> <i class="fa fa-calendar" aria-hidden="true"></i><span> 24 March 2022</span> 
+                      <h3>New Websites & backlink</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, neque. </p>
+          </div>
+          <div class="text"> <i class="fa fa-calendar" aria-hidden="true"></i><span> 24 March 2022</span> 
+            <h3>SEO analysis & content ideas</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, neque. </p>
+</div>
+<div class="text"> <i class="fa fa-calendar" aria-hidden="true"></i><span> 24 March 2022</span> 
+  <h3>SEO Tips & Digital Marketing</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, neque. </p>
+</div>
+          </div>
+        <div class="col1">
+          <div class="image1">
+                   <img src="teach.jpg" width="180px" height="180px">
+        </div> 
+        <div class="image1">
+          <img src="teach.jpg" width="180px" height="180px">
+</div> 
+<div class="image1">
+  <img src="teach.jpg" width="180px" height="180px">
+</div> 
+<div class="image1">
+  <img src="teach.jpg" width="180px" height="180px">
+</div> 
+      </div>     
+    </div>
+  </div>
+  <footer>
+    <h4 class="hru">&copy;VelMuruHa</h4>
+    
+        </footer>
+</body>
+<script>
+  const navToggle = document.querySelector(".navbar_toggle");
+const links = document.querySelector(".main_nav");
+
+navToggle.addEventListener('click', function(){
+    links.classList.toggle("show_nav");
+})
+window.onscroll=function(){
+if (window.pageYOffset>=stickyPoint){
+  navbar.classList.add("sticky");
+}
+else{
+navbar.classList.remove("sticky");
+}
+};
+</script>
+</html>

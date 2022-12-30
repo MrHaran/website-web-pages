@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <script src="https://kit.fontawesome.com/82f797382f.js" crossorigin="anonymous"></script>
+    <link href="css/aboutstyle.css" rel="stylesheet">
+</head>
+
+<body>
+  
+  <nav class="navbar">
+    <div class="logo_header">
+      <h2 style="color: #03a4ed;">CODE<span style="color: #fe3f40;">LOOP</span></h2>
+      <button class="navbar_toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    
+    <ul class="main_nav">
+      <li>
+        <a href="page.html" class="nav_links">Home</a>
+      </li>
+      <li>
+        <a href="about.html" class="active">about us</a>
+      </li>
+      <li>
+        <a href="portfolio.html" class="nav_links">Protfolio</a>
+      </li>
+      <li>
+        <a href="blog.html" class="nav_links">Blog</a>
+      </li>
+      <li>
+        <a href="service.html" class="nav_links">Services</a>
+      </li>
+      <li>
+        <a href="message.html" class="nav_links">Message Us</a>
+      </li>
+      <li>
+        <a href="contact.html" class="nav_links"><button>Contact</button></a>
+      </li>
+    </ul>
+      
+  </nav>
+  <div class="banner_row">
+    <div class="banner-col">
+        <img src="Post-removebg-preview.png" width="100%" height="100%">
+    </div>
+    <div class="banner-col1">
+        <div class="banner-col2">
+          <div>
+          <img src="icons8-data-analysis-64.png" width="40px" height="40px">
+        </div>
+      <div>
+            <h3>Data analysis</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione suscipit id tempora</p>
+          </div>
+          </div>
+        <div class="banner-col3">
+          <div>
+          <img src="icons8-reporting-64.png"width="40px" height="40px">
+        </div>
+      <div>  
+          <h3>Data Reporting</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic autem </p>
+        </div>
+        </div>
+        <div class="banner-col4">
+          <div>
+            <img src="web.png"width="40px" height="40px">
+          </div>
+          <div>
+<h3>Web Anaiytics</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsa</p>
+        </div>
+        </div>
+        <div class="banner-col4">
+          <div>
+            <img src="icons8-seo-64.png"width="40px" height="40px">
+          </div>
+          <div>
+            <h3>SEO Suggestions</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, necessitatibus</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <footer>
+    <h4 class="hru">&copy;VelMuruHa</h4>
+    
+        </footer>
+</body>
+
+<script>
+  const navToggle = document.querySelector(".navbar_toggle");
+const links = document.querySelector(".main_nav");
+
+navToggle.addEventListener('click', function(){
+    links.classList.toggle("show_nav");
+})
+window.onscroll=function()
+{myfunction()};
+var navbar= document.getElementById("navbar");
+var sticky=navbar.offsetTop;
+function myfunction(){
+if (window.pageYOffset>=sticky){
+  navbar.classList.add("sticky");
+}
+else{
+navbar.classList.remove("sticky");
+}
+}
+</script>
+</html>

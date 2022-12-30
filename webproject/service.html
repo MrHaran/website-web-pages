@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Navigation Bar</title>
+    <script src="https://kit.fontawesome.com/82f797382f.js" crossorigin="anonymous"></script>
+    <link href="css/service.css" rel="stylesheet">
+    <link href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+  
+  <nav class="navbar">
+    <div class="logo_header">
+      <h2 style="color: #03a4ed;">CODE<span style="color: #fe3f40;">LOOP</span></h2>
+      <button class="navbar_toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    
+    <ul class="main_nav">
+      <li>
+        <a href="page.html" class="nav_links">Home</a>
+      </li>
+      <li>
+        <a href="about.html" class="nav_links">About us</a>
+      </li>
+      <li>
+        <a href="portfolio.html" class="nav_links">Protfolio</a>
+      </li>
+      <li>
+        <a href="blog.html" class="nav_links">Blog</a>
+      </li>
+      <li>
+        <a href="service.html" class="active">Services</a>
+      </li>
+      <li>
+        <a href="message.html" class="nav_links">Message Us</a>
+      </li>
+      <li>
+        <a href="contact.html" class="nav_links"><button>Contact</button></a>
+      </li>
+    </ul>
+      
+  </nav>
+
+
+  <!--Banner-->
+
+  <div class="banner_row">
+    <div class="banner-col">
+      <img src="blue.png" alt="" width="100%" height="100%">
+    </div>
+    <div class="banner-col1">
+        <h1>
+          Grow Your Website With Our   
+<strong style="color: slateblue;"> SEO  </strong>Services &<strong style="color: rgb(253, 8, 57);">Project</strong> Ideas
+ </h1>
+        <p style="font-family: Georgia, 'Times New Roman', Times, serif;">Space Dynamic HTML5 templates is free to use for your Website projects.However , you are not permitted to redistribute the template ZIP file on any CSS templates collection websites.
+            please contact us for more information. Thank you for your kind cooperation</p>
+            <div class="aim">
+            <h4><span> Website Analytics </span></h4>
+            <div class="container">
+                <div class="skill html">85%</div>
+            </div>
+          
+            <h4><span> SEO Report</span></h4>
+            <div class="container">
+                <div class="skill php">88%</div>
+            </div>
+            <h4>Page Optimizations</h4>
+            <div class="container">
+                <div class="skill css">94%</div>
+            </div>
+        </div>
+    </div>
+  
+  </div>
+  <footer>
+    <h4 class="hru">&copy;VelMuruHa</h4>
+    
+        </footer>
+</body>
+<script>
+  const navToggle = document.querySelector(".navbar_toggle");
+const links = document.querySelector(".main_nav");
+
+navToggle.addEventListener('click', function(){
+    links.classList.toggle("show_nav");
+})
+window.onscroll=function(){
+if (window.pageYOffset>=stickyPoint){
+  navbar.classList.add("sticky");
+}
+else{
+navbar.classList.remove("sticky");
+}
+};
+</script>
+</html>
